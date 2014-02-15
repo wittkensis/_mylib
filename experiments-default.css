@@ -1,0 +1,206 @@
+body {
+    background: #333;
+    color: #fff;
+    font-family: "Helvetica Neue", Helvetica, "Arial Unicode MS", Arial, sans-serif;
+    font-size: 12pt;
+    line-height: 16pt;
+    font-weight: 200;
+    color: #fff;
+}
+* {
+    box-sizing: border-box;
+}
+#wrapper {
+    width: 1000px;
+    margin: 20px auto 0 auto;
+}
+#console {
+    position: relative;
+    z-index: 50;
+    width: 400px;
+    padding: 30px 20px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background: rgba(255,255,255,.1);
+    float: left;
+    margin-top: 20px;
+
+    -webkit-animation: slidein 700ms; /* Safari and Chrome */
+       -moz-animation: slidein 700ms; /* Firefox */
+        -ms-animation: slidein 700ms; /* Internet Explorer */
+         -o-animation: slidein 700ms; /* Opera */
+            animation: slidein 700ms;
+}
+
+#canvas {
+    position: relative;
+    z-index: 100;
+    border-radius: 3px;
+    float: right;
+    background: #fff;
+    box-shadow: 0 3px 15px rgba(0,0,0,1);
+    width: 600px;
+    padding: 20px 20px 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 18pt;
+    line-height: 18pt;
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: #fff;
+}
+header p {
+    font-size: 14pt;
+    line-height: 18pt;
+    color: #aaa;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    left:0;
+    height: 20px;
+    bottom: -40px;
+    padding: 0 20px;
+    color: #999;
+    text-shadow: 0 2px 3px rgba(0,0,0,0.3);
+}
+footer a {
+    color: inherit;
+}
+footer a:hover {
+    color: #eee;
+}
+footer .byline {
+    float: right;
+}
+footer .source {
+    float: left;
+}
+
+section {
+    border-top: 1px solid #666;
+    margin-top: 30px;
+    padding-top: 40px;
+}
+label {
+    display: block;
+    clear: both;
+    position: relative;
+}
+label.required:after {
+    content: "*";
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    font-size: 26pt;
+}
+label span {
+    display: block;
+    float: left;
+    width: 45%;
+    text-align: right;
+    display: block;
+    padding: 5px 20px 5px 0;
+}
+label input[type='text'] {
+    float: right;
+    font-size: 12pt;
+    line-height: 12pt;
+    padding: 5px;
+    border: 0;
+    border-radius: 3px;
+    background: rgba(255,255,255,0.5);
+    width: 45%;
+    margin-right: 10%;
+    font-family: inherit;
+}
+label input[type='text']:hover {
+    background: rgba(255,255,255,0.6);
+}
+label input[type='text']:focus {
+    outline: none;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+    background: rgba(255,255,255,1);
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    clear: both;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+fieldset.core {
+    padding: 10px 0;
+    background: rgba(255,255,255,0.05);
+}
+
+fieldset label span {
+    color: #999;
+}
+fieldset label:first-child span {
+    color: inherit;
+}
+
+fieldset:last-of-type {
+    margin-top: 40px;
+    text-align: center;
+}
+button,
+input[type="submit"],
+input[type="button"] {
+    padding: 15px 15px;
+    width: 50%;
+    font-family: inherit;
+    font-size: 14pt;
+    line-height: 14pt;
+    border: none;
+    box-shadow: 0 0 0 rgba(0,0,0,0.4);
+    border-radius: 3px;
+    outline: none;
+    transition: all 0.1s;
+}
+button:active,
+input[type="submit"]:active,
+input[type="button"]:active {
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.5);
+}
+
+input[type="submit"] {
+    background: lightgreen;
+}
+
+@keyframes slidein {
+    from { left: 400px; }
+    to   { left: 0px; }
+}
+
+/* Firefox */
+@-moz-keyframes slidein {
+    from { left: 400px; }
+    to   { left: 0px; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes slidein {
+    from { left: 400px; }
+    to   { left: 0px; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes slidein {
+    from { left: 400px; }
+    to   { left: 0px; }
+}​
+
+/* Opera */
+@-o-keyframes slidein {
+    from { left: 400px; }
+    to   { left: 0px; }
+}​
